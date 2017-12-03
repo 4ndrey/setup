@@ -1,0 +1,28 @@
+[user]
+	name = Andrey Toropchin
+	email = 4ndrey@gmail.com
+[core]
+	excludesfile = /Users/andy/.gitignore
+	editor = subl -n -w
+[alias]
+  di = diff --color
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[merge]
+	tool = opendiff
+[commit]
+	template = /Users/andy/.stCommitMsg
+[pull]
+  rebase = true
